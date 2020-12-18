@@ -1,0 +1,28 @@
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.tabel-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+}
+
+.img-thumb {
+  max-width: 70px;
+  margin: 3px 0;
+}
+
+.mat-elevation-z8 {
+  padding: 1.25em;
+}
+
+th.mat-header-cell:first-of-type,
+td.mat-cell:first-of-type,
+td.mat-footer-cell:first-of-type {
+  padding-left: 0;
+}

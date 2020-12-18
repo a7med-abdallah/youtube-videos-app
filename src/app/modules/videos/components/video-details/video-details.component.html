@@ -1,0 +1,29 @@
+<mat-card *ngIf="video">
+    <mat-list>
+        <h1>{{ video.name }}</h1>
+        <ng-container *ngIf="video.description">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+                <strong>Description : </strong> <span> {{ video.description }}</span>
+            </mat-list-item>
+        </ng-container>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <strong>view Count : </strong> <span>{{video.statistics.viewCount}}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <strong>like Count : </strong> <span>{{video.statistics.likeCount}}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <strong>Comment Count : </strong> <span>{{video.statistics.commentCount}}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <strong>Duration : </strong> <span>{{video.statistics.duration}}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <app-star-rating [rating]="video.rating" [starCount]="5"></app-star-rating>
+    </mat-list>
+</mat-card>
